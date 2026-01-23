@@ -11,6 +11,8 @@ const SYMBOL_SIZE: u16 = 128;           // Good size for ~32-byte hashes/headers
 const REPAIR_PACKETS: u32 = 50;         // Extra repair packets (very robust)
 const SIMULATED_LOSS: usize = 30;       // Test with significant loss
 
+//Losses tested secure upto parity 
+
 #[derive(Debug, Clone)]
 struct Block {
     id: u64,
