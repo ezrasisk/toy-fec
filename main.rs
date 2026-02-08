@@ -200,7 +200,7 @@ fn main() {
 
     println!("Starting high-throughput DAG simulation with k={} and StitchBot...\n", K);
 
-    for i in 1..=150 {  // 150 new blocks → 151 total
+    for i in 1..=150 {  // N new blocks & N+1 total blocks
         let current_tips: Vec<u64> = dag.tips.iter().copied().collect();
         let num_parents = current_tips.len().min(3);
 
